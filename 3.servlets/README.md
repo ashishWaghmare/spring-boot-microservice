@@ -9,7 +9,7 @@ For my case the command is as below
 
 Now create new static folder
 
-   mkdir mywebapplication/src/main/resources/static
+    mkdir mywebapplication/src/main/resources/static
 
 Create new file in above folder index.html
 
@@ -22,3 +22,18 @@ Create new file in above folder index.html
         </BODY>
     </HTML>
 
+
+Now run this from folder mywebapplication
+
+      mywebapplication>mvn clean package
+ 
+This will generate war file at given location 
+      
+      target/mywebapplication.war 
+
+Copy created war and copy in Tomcat installation webapp folder
+After restart you should see Body message at URL
+     
+      http://localhost:8080/mywebapplicaton
+
+    
